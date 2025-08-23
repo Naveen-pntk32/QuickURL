@@ -125,6 +125,11 @@ Material UI Alerts are used for all error messages:
    npm run build
    ```
 
+4. Preview the production build:
+   ```bash
+   npm run preview
+   ```
+
 ## 🎨 UI/UX Design
 
 The application follows Material Design principles with:
@@ -164,6 +169,27 @@ The application includes:
 - Responsive design checks
 - Cross-browser compatibility
 
+## 🚧 Troubleshooting
+
+### Build Issues
+
+If you encounter build errors (exit code 126), try the following:
+
+1. Ensure you have the correct Node.js version (>=14.0.0)
+2. Clear npm cache: `npm cache clean --force`
+3. Delete node_modules and reinstall: 
+   ```bash
+   rm -rf node_modules package-lock.json
+   npm install
+   ```
+4. Try building with: `npm run build`
+
+### Deployment
+
+For deployment, ensure your hosting platform supports:
+- Static file serving
+- Client-side routing (redirect all routes to index.html)
+
 ## 📄 License
 
-MIT License - see LICENSE file for details.#
+MIT License - see LICENSE file for details.
