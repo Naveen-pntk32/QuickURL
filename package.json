@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "rebuild": "npm run clean && npm run build",
-    "prebuild": "echo \"Checking vite binary permissions...\" && ls -la node_modules/.bin/vite || echo \"vite binary not found\""
+    "prebuild": "echo \"Checking vite binary permissions...\" && ls -la node_modules/.bin/vite || echo \"vite binary not found\" && chmod +x node_modules/.bin/vite"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -32,7 +32,7 @@
     "eslint-plugin-react-refresh": "^0.4.5"
   },
   "engines": {
-    "node": "18.x",
+    "node": "22.x",
     "npm": ">=6.0.0"
   }
 }
