@@ -9,7 +9,8 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "clean": "rm -rf dist",
-    "rebuild": "npm run clean && npm run build"
+    "rebuild": "npm run clean && npm run build",
+    "prebuild": "echo \"Checking vite binary permissions...\" && ls -la node_modules/.bin/vite || echo \"vite binary not found\""
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
